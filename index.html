@@ -107,5 +107,8 @@ function draw( graph ) {
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; });
   });
+  
+  for (var i = n * n; i > 0; --i) force.tick();
+  force.stop();
 }
 </script>
